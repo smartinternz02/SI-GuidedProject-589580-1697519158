@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Prediction - Select Date</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bitcoin Price Prediction</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="predict.html">Predict Bitcoin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Select Date for Prediction</h2>
+            <p>Select a date to get the predicted Bitcoin price:</p>
+            <form method="POST" action="/predict"> 
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="Date"> 
+                <input type="submit" value="Predict">
+            </form>
+        </section>
+        <section>
+            <h2>Prediction Result</h2>
+            <p><span>{{ prediction_text }}</span></p> 
+        </section>
+    </main>
+    <footer>
+        <p>2023 Bitcoin Prediction Project</p>
+        <p> By Jimil Digaswala, Sach Thadani, Nilay Saraf </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Prediction Project</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bitcoin Prediction Project using FbProphet</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="{{ url_for('prediction') }}">Predict Bitcoin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>About the Project</h2>
+            <p>This project provides predictions for Bitcoin's value based on historical data and machine learning algorithms using prophet.</p>
+        </section>
+        <section>
+            <h2>How is this project useful?</h2>
+            <p>Bitcoin prediction can be useful in various ways, offering valuable insights to investors, traders, and the broader cryptocurrency community. 
+                By analyzing historical data and market trends, these predictions can help individuals make informed investment decisions, manage risk, and 
+                optimize their portfolios. They can also serve as a foundation for trading strategies and automated algorithms, enabling users to capitalize 
+                on price movements. Additionally, Bitcoin predictions can foster awareness, education, and market sentiment analysis, contributing to a better 
+                understanding of the cryptocurrency market's dynamics and its potential for both gains and losses. However, it's essential to remember 
+                that cryptocurrency markets are highly volatile, and predictions are never foolproof, so they should be used in conjunction with other 
+                research and risk management strategies.</p>
+        </section>
+        <section>
+            <h2>Get Started</h2>
+            <p>To predict Bitcoin's value, please navigate to the prediction page by clicking on the link below:</p>
+            <a href="{{ url_for('prediction') }}">Predict Bitcoin</a>
+        </section>
+    </main>
+    <footer>
+        <p> 2023 Bitcoin Prediction Project</p>
+        <p> By Jimil Digaswala, Sach Thadani, Nilay Saraf </p>
+    </footer>
+</body>
+</html>
+
+
+   
